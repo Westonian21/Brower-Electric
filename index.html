@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <!--
+    File Date: 1Dec2022
+    File Version: v1.0
+    File Creator: Weston Hood
+    File Name: index.html
+     -->
+</head>
+
+<body>
+    <!-- The following section remains consistant between pages. -->
+    <header></header>
+
+    <!-- The following section remains consistant between pages;
+        Exceptions:
+        <nav><nav><div><div><ul><li>
+            - "a" items may differentiate depending on active state. "active" class will be appended to the currently active webpage.
+            - "a" items may differentiate regarding aria complience. "aria-current="page"" will be appended to the currently active webpage.
+     -->
+
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h2>Brower Electric</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <h5>Home</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">
+                            <h5>Projects</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="request_a_quote.html">
+                            <h5>Request a Quote</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apply.html">
+                            <h5>Apply</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">
+                            <h5>Contact Us</h5>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-primary" href="tel:660-773-6760">
+                    <h5>660-773-6760</h5>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The following section should vary between pages. -->
+    <h1 class="text-center container">Providing Power to Missouri Since 1978.</h1>
+
+    <div class="alert alert-warning alert-dismissible fade show text-center container visually-hidden" role="alert">
+        <h2 style="margin:0;">We are Hiring!</h2>
+        <hr>
+        <p style="margin: 0; font-size: larger;">To submit an application, please visit the <a href="apply.html">Apply</a> page.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <section class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner ratio ratio-16x9">
+                <div class="carousel-item active">
+                    <img src="Images\Image 1.jpeg" class="d-block w-100" alt="Image 1.jpeg">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images\Image 2.jpg" class="d-block w-100" alt="Image 2.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images\Image 3.jpg" class="d-block w-100" alt="Image 3.jpeg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <div class="container" style="margin: auto; padding: 2vw;">
+        <div class="card" style="width: auto; padding: 1.2vw;">
+            <h2>Who are We?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt assumenda fuga sed tempore quaerat natus? Libero facere eum tempora quasi quaerat illo, consectetur ab, labore, rem numquam corrupti repellat ipsam!
+            In enim molestiae dignissimos id itaque fugit numquam, veritatis praesentium unde dolorem veniam deserunt aspernatur quod totam hic, eius at vero minus excepturi voluptas vel nostrum inventore, voluptatibus nemo. Exercitationem?
+            Eaque tenetur magnam, sint sunt laudantium, amet corporis, placeat quidem architecto nam maxime. Iusto, aliquid sunt sit omnis vel asperiores saepe nam pariatur nulla minus nostrum vitae voluptas! Labore, omnis?
+            Non odit eos debitis soluta ad nisi fuga, tempora quam quo repudiandae fugit officiis nobis libero laudantium modi laboriosam provident et numquam odio illum at a? Maiores exercitationem consequuntur nesciunt?
+            Nulla, iusto odio accusamus eum laudantium perferendis, quam earum explicabo cum sequi id numquam sint libero, quia eligendi. Totam labore repudiandae animi fuga quae quisquam laudantium voluptatum eaque optio blanditiis!
+            Excepturi esse nulla hic dolor, repellat accusantium laboriosam. Quidem quo cupiditate architecto numquam provident aspernatur aperiam consectetur? At neque et, omnis repellendus animi molestiae dignissimos fuga quos ea excepturi exercitationem!
+            Similique asperiores, nihil aliquam corporis culpa facilis quae, corrupti sequi provident omnis sed doloremque nostrum aperiam et illum aliquid reprehenderit debitis eius, natus ducimus neque. Sit inventore consectetur nostrum nemo?
+            Quod odio ratione repellendus, corrupti optio dicta nesciunt non laudantium assumenda temporibus minima, dolorum beatae sunt sint sit error. Voluptatem facilis aut debitis cupiditate quaerat fugiat fuga in ullam saepe.
+            Fugiat numquam velit, est voluptas quae repellendus in vero accusantium culpa esse ipsa, delectus blanditiis explicabo optio dolorum assumenda illum dicta cum harum laborum officia labore voluptate at. Obcaecati, minima!
+            Voluptatem voluptatum necessitatibus commodi cum quae, aliquam natus cumque, error consectetur ad reiciendis ut expedita sed. Voluptatibus culpa aliquid, sunt ea nesciunt corporis quisquam quaerat quam. Architecto iste earum et.</p>
+        </div>
+    </div>
+
+    <section>
+        <h2 class="container">Current Projects</h2>
+        <div class="container text-center">
+            <div class="row gy-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="Images\Image 2.jpg" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h3 class="card-text">Project 1</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="Images\Image 3.jpg" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h3 class="card-text">Project 2</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="Images\Image 4.webp" class="card-img-top" alt="Image 4">
+                        <div class="card-body">
+                            <h3 class="card-text">Project 3</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The following section remains consistant between pages. -->
+    <div style="margin-bottom: 5vw;"></div>
+    <footer class="container-fluid" style="border: solid 2px black;">
+        <div class="row text-center">
+            <div class="col">
+                <h4>Projects</h4>
+            </div>
+            <div class="col">
+                <h4>Request a Quote</h4>
+            </div>
+            <div class="col">
+                <h4>Submit an Application</h4>
+            </div>
+            <div class="col">
+                <h4>Contact Information</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Copyright Information</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

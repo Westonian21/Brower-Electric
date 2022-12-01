@@ -1,0 +1,90 @@
+/* Defaults */
+h1, h2, h3 {
+    font-family: 'Kalam-Regular';
+}
+
+/* Nav Items */
+.navbar {
+    background-color: #90daff;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgba(175, 175, 175);
+}
+
+.nav-link {
+    color: rgb(50, 50, 50);
+    --bs-nav-link-hover-color: rgba(225, 225, 225);
+}
+
+.navbar-brand > h2 {
+    font-family: Lucida Handwriting Italic;
+    --bs-navbar-brand-font-size: 1.5rem;
+    cursor: default;
+}
+
+a > h5, a > h2 {
+    margin: 0;
+}
+
+/* Main Content Items */
+h1 {
+    padding-top: 1.5vw;
+    padding-bottom: 0.75vw;
+}
+
+div.col {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 20rem;
+    background-color: #e1e1e1
+}
+
+
+
+/* Footer Items */
+footer {
+    background-color: #136093;
+}
+
+footer {
+    color:#90daff;
+    margin-bottom: 0;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Lucida Handwriting Italic;
+    src: url(Fonts/Lucida_Handwriting_Italic.ttf);
+}
+
+@font-face {
+    font-family: Kalam-Bold;
+    src: url(Fonts/Kalam/Kalam-Bold.ttf);
+}
+
+@font-face {
+    font-family: Kalam-Light;
+    src: url(Fonts/Kalam/Kalam-Light.ttf);
+}
+
+@font-face {
+    font-family: Kalam-Regular;
+    src: url(Fonts/Kalam/Kalam-Regular.ttf);
+}
+
+/* Misc */
+body {
+    --bs-body-bg: #e3ffff;
+}
+
+a {
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    -webkit-user-drag: none;
+}

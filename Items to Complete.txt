@@ -1,0 +1,2 @@
+- Make nav bar size reactive in relation to whether or not the page is scrolled to the top.
+- Make the phone number seperate from the rest of the nav items.
