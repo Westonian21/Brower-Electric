@@ -9,34 +9,37 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Contact Us</title>
-    <!--
-    File Date: 1Dec2022
-    File Version: v1.0
-    File Creator: Weston Hood
+    <!-- 
     File Name: contact_us.html
-     -->
+    File Last Updated: 13Dec2022
+    File Version: v1.1
+    File Creator: Weston Hood
+    -->
 </head>
 
 <body>
-    <!-- The following section remains consistant between pages. -->
-    <header></header>
-
-    <!-- The following section remains consistant between pages;
+    <!-- The following section remains consistent between pages;
         Exceptions:
         <nav><nav><div><div><ul><li>
             - "a" items may differentiate depending on active state. "active" class will be appended to the currently active webpage.
-            - "a" items may differentiate regarding aria complience. "aria-current="page"" will be appended to the currently active webpage.
+            - "a" items may differentiate regarding aria 
+            compliance. "aria-current="page"" will be appended to the currently active webpage.
      -->
 
-    <nav class="navbar sticky-top navbar-expand-lg">
+     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h2>Brower Electric</h2>
+            <a class="navbar-brand" href="index.html">
+                <img src="Images\Company-logo.png" height="60vw">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div>
+                <a class="btn btn-outline-primary" href="tel:660-773-6760">
+                    <h5>660-773-6760</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -65,39 +68,57 @@
                         </a>
                     </li>
                 </ul>
-                <a class="btn btn-outline-primary" href="tel:660-773-6760">
-                    <h5>660-773-6760</h5>
-                </a>
             </div>
         </div>
     </nav>
 
     <!-- The following section should vary between pages. -->
-    
-    <h1 class="container">All current and relevant contact information.</h1>
 
-    <!-- The following section remains consistant between pages. -->
-    <div style="margin-bottom: 5vw;"></div>
-    <footer class="container-fluid" style="border: solid 2px black;">
-        <div class="row text-center">
-            <div class="col">
-                <h4>Projects</h4>
-            </div>
-            <div class="col">
-                <h4>Request a Quote</h4>
-            </div>
-            <div class="col">
-                <h4>Submit an Application</h4>
-            </div>
-            <div class="col">
-                <h4>Contact Information</h4>
-            </div>
-        </div>
+    <div class="container mt-3 mb-3 text-center g-1">
         <div class="row">
+            <div class="col g">
+                <div class="container contactCard mb-1">
+                            <h2>Office Number</h2>
+                            <a class="btn btn-outline-primary" href="tel:660-773-6760">(660) 773-6760</a>
+                </div>
+            </div>
             <div class="col">
-                <p>Copyright Information</p>
+                <div class="container contactCard mb-1">
+                    <h2>Fax Number</h2>
+                    <a class="btn btn-outline-primary" href="tel:660-773-5120">(660) 773-5120</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container contactCard mb-1">
+                    <h2>Josh Brower</h2>
+                    <a class="btn btn-outline-primary" href="tel:417-345-1265">(417) 345-1265</a>
+                    <a class="btn btn-outline-primary" href="mailto:brower_josh@yahoo.com">brower_josh@yahoo.com</a>
+                    <p>&bull; Owner</p>
+                    <p>&bull; Project Manager</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container contactCard mb-1">
+                    <h2>Donald Brower</h2>
+                    <a class="btn btn-outline-primary" href="work number">Work Number</a>
+                    <p>&bull; Owner</p>
+                    <p>&bull; Project Manager</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container contactCard mb-1">
+                    <h2>Stephanie Jones</h2>
+                    <a class="btn btn-outline-primary" href="mailto:browerelectric@yahoo.com">browerelectric@yahoo.com</a>
+                    <p>&bull; Office Manager</p>
+                    <p>&bull; Accounting</p>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- The following section remains consistent between pages. -->
+    <footer class="container-fluid" style="border: solid 2px black;">
+        <p style="margin: 0px;" class="mb-1">&copy; 2022 &bull; Brower Electric</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

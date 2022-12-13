@@ -9,34 +9,36 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Request a Quote</title>
-    <!--
-    File Date: 1Dec2022
-    File Version: v1.0
-    File Creator: Weston Hood
+    <!-- 
     File Name: request_a_quote.html
-     -->
+    File Last Updated: 13Dec2022
+    File Version: v1.1
+    File Creator: Weston Hood
+    -->
 </head>
 
 <body>
-    <!-- The following section remains consistant between pages. -->
-    <header></header>
-
-    <!-- The following section remains consistant between pages;
+    <!-- The following section remains consistent between pages;
         Exceptions:
         <nav><nav><div><div><ul><li>
             - "a" items may differentiate depending on active state. "active" class will be appended to the currently active webpage.
-            - "a" items may differentiate regarding aria complience. "aria-current="page"" will be appended to the currently active webpage.
+            - "a" items may differentiate regarding aria compliance. "aria-current="page"" will be appended to the currently active webpage.
      -->
 
-    <nav class="navbar sticky-top navbar-expand-lg">
+     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h2>Brower Electric</h2>
+            <a class="navbar-brand" href="index.html">
+                <img src="Images\Company-logo.png" height="60vw">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div>
+                <a class="btn btn-outline-primary" href="tel:660-773-6760">
+                    <h5>660-773-6760</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -50,7 +52,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about_us.html">
+                        <a class="nav-link active" aria-current="page" href="request_a_quote.html">
                             <h5>Request a Quote</h5>
                         </a>
                     </li>
@@ -60,44 +62,74 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="request_a_quote.html">
+                        <a class="nav-link" href="contact_us.html">
                             <h5>Contact Us</h5>
                         </a>
                     </li>
                 </ul>
-                <a class="btn btn-outline-primary" href="tel:660-773-6760">
-                    <h5>660-773-6760</h5>
-                </a>
             </div>
         </div>
     </nav>
 
     <!-- The following section should vary between pages. -->
-    
-    <h1 class="container">Form to Request a Quote.</h1>
 
-    <!-- The following section remains consistant between pages. -->
-    <div style="margin-bottom: 5vw;"></div>
+    <h1 class="container" style="text-align: center;">Request a Quote</h1>
+    <div class="container">
+        <div class="card mb-3" style="width: auto;">
+            <p>If you would like to request for a free quote, you may do that here. Please limit
+                requests
+                to only one per customer, and we will get back with you as quickly as possible.</p>
+        </div>
+    </div>
+    <div class="container">
+        <form class="row g-3 mb-3" action="https://formspree.io/f/xqkjrove" method="POST" id="Request a Quote">
+            <!-- What is an Email Address we can contact you with? -->
+            <div class="col-lg-6">
+                <label for="What is an Email Address we can contact you with?" class="form-label">What is an Email
+                    Address
+                    we can contact you with?</label>
+                <input type="email" class="form-control" required
+                    name="What is an Email Address we can contact you with?"
+                    id="What is an Email Address we can contact you with?" placeholder="name@example.com">
+            </div>
+            <!-- What is the company name? -->
+            <div class="col-sm-6">
+                <label for="What is the company name?" class="form-label">What is the company name?</label>
+                <input type="text" class="form-control" id="What is the company name?" required
+                    name="What is the company name?">
+            </div>
+            <!-- Where will the job be? -->
+            <div class="col-md-6">
+                <label for="Where will the job be?" class="form-label">Where will the job be?</label>
+                <input type="text" class="form-control" required name="Where will the job be?"
+                    id="Where will the job be?" placeholder="City, State">
+            </div>
+            <!-- When is the job estimated to break ground? -->
+            <div class="col-md-6">
+                <label for="When is the job estimated to break ground?" class="form-label">When is the job estimated
+                    to
+                    break ground?</label>
+                <input type="date" class="form-control" id="When is the job estimated to break ground?" required
+                    name="When is the job estimated to break ground?">
+            </div>
+            <!-- What additional info can you provide at this time? -->
+            <div class="col-md-12">
+                <label for="What additional info can you provide at this time?" class="form-label">What additional
+                    info
+                    can
+                    you provide at this time?</label>
+                <textarea name="What additional info can you provide at this time?" rows="7"
+                    id="What additional info can you provide at this time?" required class="form-control"
+                    placeholder="Due to the current nature of the open market, we cannot ask for anything more specific than what has been asked above. All requests will be considered. It is asked that any additional info may be provided here, as it will better enable us to get back to you as quickly as possible. Thank you."></textarea>
+            </div>
+            <!-- Submit Button -->
+            <div class="container mt-3"><button type="submit" value="send" class="btn btn-primary ms-3">Submit</button></div>
+        </form>
+    </div>
+
+    <!-- The following section remains consistent between pages. -->
     <footer class="container-fluid" style="border: solid 2px black;">
-        <div class="row text-center">
-            <div class="col">
-                <h4>Projects</h4>
-            </div>
-            <div class="col">
-                <h4>Request a Quote</h4>
-            </div>
-            <div class="col">
-                <h4>Submit an Application</h4>
-            </div>
-            <div class="col">
-                <h4>Contact Information</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>Copyright Information</p>
-            </div>
-        </div>
+        <p style="margin: 0px;" class="mb-1">&copy; 2022 &bull; Brower Electric</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

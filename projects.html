@@ -9,34 +9,36 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Projects</title>
-    <!--
-    File Date: 1Dec2022
-    File Version: v1.0
-    File Creator: Weston Hood
+    <!-- 
     File Name: projects.html
-     -->
+    File Last Updated: 13Dec2022
+    File Version: v1.1
+    File Creator: Weston Hood
+    -->
 </head>
 
 <body>
-    <!-- The following section remains consistant between pages. -->
-    <header></header>
-
-    <!-- The following section remains consistant between pages;
+    <!-- The following section remains consistent between pages;
         Exceptions:
         <nav><nav><div><div><ul><li>
             - "a" items may differentiate depending on active state. "active" class will be appended to the currently active webpage.
-            - "a" items may differentiate regarding aria complience. "aria-current="page"" will be appended to the currently active webpage.
+            - "a" items may differentiate regarding aria compliance. "aria-current="page"" will be appended to the currently active webpage.
      -->
 
     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h2>Brower Electric</h2>
+            <a class="navbar-brand" href="index.html">
+                <img src="Images\Company-logo.png" height="60vw">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div>
+                <a class="btn btn-outline-primary" href="tel:660-773-6760">
+                    <h5>660-773-6760</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -60,14 +62,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="request_a_quote.html">
+                        <a class="nav-link" href="contact_us.html">
                             <h5>Contact Us</h5>
                         </a>
                     </li>
                 </ul>
-                <a class="btn btn-outline-primary" href="tel:660-773-6760">
-                    <h5>660-773-6760</h5>
-                </a>
             </div>
         </div>
     </nav>
@@ -82,7 +81,8 @@
                     <div class="card">
                         <img src="Images\Image 2.jpg" class="card-img-top" alt="Image 2">
                         <div class="card-body">
-                            <h3 class="card-text">Project 1</h3>
+                            <h3 class="card-text">Example Project 1</h3>
+                            <p>This is some basic info about the project, possibly including information such as the estimated completion date, location, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,8 @@
                     <div class="card">
                         <img src="Images\Image 3.jpg" class="card-img-top" alt="Image 3">
                         <div class="card-body">
-                            <h3 class="card-text">Project 2</h3>
+                            <h3 class="card-text">Example Project 2</h3>
+                            <p>This is some basic info about the project, possibly including information such as the estimated completion date, location, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -98,69 +99,13 @@
                     <div class="card">
                         <img src="Images\Image 4.webp" class="card-img-top" alt="Image 4">
                         <div class="card-body">
-                            <h3 class="card-text">Project 3</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="Images\Image 2.jpg" class="card-img-top" alt="Image 2">
-                        <div class="card-body">
-                            <h3 class="card-text">Project 4</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="Images\Image 3.jpg" class="card-img-top" alt="Image 3">
-                        <div class="card-body">
-                            <h3 class="card-text">Project 5</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="Images\Image 4.webp" class="card-img-top" alt="Image 4">
-                        <div class="card-body">
-                            <h3 class="card-text">Project 6</h3>
+                            <h3 class="card-text">Example Project 3</h3>
+                            <p>This is some basic info about the project, possibly including information such as the estimated completion date, location, etc.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="container">
-        <h1>Testimonies</h1>
-        <div class="container text-center">
-            <div class="row gy-5">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">JT Holman General Construction and Excavating, LLC</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">James T. Holman, Owner</h6>
-                            <p class="card-text">Brower Electric has been performing and executing our commercial and residential electrical needs for over 20 years. They have always been very professional, timely and a pleasure to do business with. I look forward to continuing our working relationship for many years to come.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Copeland Development & Construction Co., Inc</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Pat Jones, Construction Manager</h6>
-                            <p class="card-text">We have worked on numerous projects with Brower Electric over the course of 25 years. The projects consist of everything from small tenant infill remodels to large industrial construction. We have worked with Brower Electric on countless projects in Missouri, Kansas, lowa, and Illinois. Those projects have all had tight schedules and Brower Electric always works to make sure that those schedules are met. After completion of the projects, they are always attentive to the punchlist and warranty items.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Bradford Building</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Michael Patterson, Project Manager</h6>
-                            <p class="card-text">Please accept this letter as my strong recommendation for Brower Electric. have worked with Brower on over a dozen projects and the performance and service from both their field and office personnel has always been top notch. The projects that have done with Brower have all had very tight timelines and they always work well with us to make sure those schedules are met. They are also very responsive to punch list and warranty items after the project is complete. We deal with many different subs on our projects and Brower is one of the few that never have to worry about.</p>
-                        </div>
-                    </div>
-                </div>
     </section>
 
     <section class="container">
@@ -171,7 +116,8 @@
                     <div class="card">
                         <img src="Images\Image 2.jpg" class="card-img-top" alt="Image 2">
                         <div class="card-body">
-                            <h3 class="card-text">Project 1</h3>
+                            <h3 class="card-text">Example Project 1</h3>
+                            <p>This is some basic info about the project, possibly including information such as the estimated completion date, location, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -179,7 +125,8 @@
                     <div class="card">
                         <img src="Images\Image 3.jpg" class="card-img-top" alt="Image 3">
                         <div class="card-body">
-                            <h3 class="card-text">Project 2</h3>
+                            <h3 class="card-text">Example Project 2</h3>
+                            <p>This is some basic info about the project, possibly including information such as the estimated completion date, location, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -187,31 +134,8 @@
                     <div class="card">
                         <img src="Images\Image 4.webp" class="card-img-top" alt="Image 4">
                         <div class="card-body">
-                            <h3 class="card-text">Project 3</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="Images\Image 2.jpg" class="card-img-top" alt="Image 2">
-                        <div class="card-body">
-                            <h3 class="card-text">Project 4</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="Images\Image 3.jpg" class="card-img-top" alt="Image 3">
-                        <div class="card-body">
-                            <h3 class="card-text">Project 5</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="Images\Image 4.webp" class="card-img-top" alt="Image 4">
-                        <div class="card-body">
-                            <h3 class="card-text">Project 6</h3>
+                            <h3 class="card-text">Example Project 3</h3>
+                            <p>This is some basic info about the project, possibly including information such as the estimated completion date, location, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -219,28 +143,9 @@
         </div>
     </section>
 
-    <!-- The following section remains consistant between pages. -->
-    <div style="margin-bottom: 5vw;"></div>
+    <!-- The following section remains consistent between pages. -->
     <footer class="container-fluid" style="border: solid 2px black;">
-        <div class="row text-center">
-            <div class="col">
-                <h4>Projects</h4>
-            </div>
-            <div class="col">
-                <h4>Request a Quote</h4>
-            </div>
-            <div class="col">
-                <h4>Submit an Application</h4>
-            </div>
-            <div class="col">
-                <h4>Contact Information</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>Copyright Information</p>
-            </div>
-        </div>
+        <p style="margin: 0px;" class="mb-1">&copy; 2022 &bull; Brower Electric</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

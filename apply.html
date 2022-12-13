@@ -9,34 +9,36 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Apply</title>
-    <!--
-    File Date: 1Dec2022
-    File Version: v1.0
-    File Creator: Weston Hood
+    <!-- 
     File Name: apply.html
-     -->
+    File Last Updated: 13Dec2022
+    File Version: v1.1
+    File Creator: Weston Hood
+    -->
 </head>
 
 <body>
-    <!-- The following section remains consistant between pages. -->
-    <header></header>
-
-    <!-- The following section remains consistant between pages;
+    <!-- The following section remains consistent between pages;
         Exceptions:
         <nav><nav><div><div><ul><li>
             - "a" items may differentiate depending on active state. "active" class will be appended to the currently active webpage.
-            - "a" items may differentiate regarding aria complience. "aria-current="page"" will be appended to the currently active webpage.
+            - "a" items may differentiate regarding aria compliance. "aria-current="page"" will be appended to the currently active webpage.
      -->
 
-    <nav class="navbar sticky-top navbar-expand-lg">
+     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h2>Brower Electric</h2>
+            <a class="navbar-brand" href="index.html">
+                <img src="Images\Company-logo.png" height="60vw">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div>
+                <a class="btn btn-outline-primary" href="tel:660-773-6760">
+                    <h5>660-773-6760</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -65,40 +67,174 @@
                         </a>
                     </li>
                 </ul>
-                <a class="btn btn-outline-primary" href="tel:660-773-6760">
-                    <h5>660-773-6760</h5>
-                </a>
             </div>
         </div>
     </nav>
 
     <!-- The following section should vary between pages. -->
-    
-    <h1 class="container">Job Applicaiton Form</h1>
-    <h2 class="container" style="font-family: sans-serif;">Information can be sourced from indeed. Perhaps for the time being, there may even be a link to the indeed application, as many individuals may prefer to go that route, if they already have a preexisting indeed resume.</h2>
+    <div class="container">
+        <h1 style="text-align: center;">Employee Application Form</h1>
+        <div class="card mb-3" style="width: auto; padding: 1vw;">
+            <p class="bodyContent mb-0">If you would like to join our team, you may apply below. Once your application
+                is
+                received, we will get back to you regarding any additional information that may be required, as well as
+                possible dates for an interview.</p>
+                <h4>Description</h4>
+            <p>Brower Electric is currently looking for Journeyman Electricians with Commercial and Residential
+                experience. We will fill these electrical positions immediately and, the pay is negotiable, depending on
+                electrical ability/experience. We work in Missouri and Kansas.<br>
+                We will provide transportation from Bevier/Elkland offices to job sites. Hotel expense paid while
+                traveling.</p>
+            <h4>Requirements:</h4>
+            <ul>
+                <li>The electrician must be 18 years or older.</li>
+                <li>Minimum of 4 years experience.</li>
+                <li>Must be a self-starter and manage projects without supervision.</li>
+                <li>Knowledge of electric and general construction and NEC codes</li>
+                <li>Knowledge of electric and general construction and NEC codes</li>
+                <li>Ability to read and interpret blueprints, bend conduit, pull and terminate wire, and troubleshoot.
+                </li>
+                <li>Maintain a clean and safety conscious work environment</li>
+                <li>Possession of essential hand tools and a battery-powered drill</li>
+                <li>Reliable attendance REQUIRED</li>
+                <li>Ability to work effectively as a team member</li>
+                <li>Ability to manage time and material efficiently</li>
+                <li>Willingness to travel as required (We provide transportation to job sites)</li>
+                <li>Maintain reliable transportation to get to and from offices: Bevier / Elkland, MO</li>
+                <li>Electrician MUST have a valid driver's license and have an acceptable driving record</li>
+            </ul>
+            <p>Brower Electric has a defined background check policy. EOE</p>
+            <br>
+            <h4>Job Type:</h4>
+            <ul>
+                <li>Full-time</li>
+            </ul>
+            <h4>Pay:</h4>
+            <ul>
+                <li>$20.00 - $30.00 per hour</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>401(k)</li>
+                <li>401(k) matching</li>
+                <li>Paid time off</li>
+            </ul>
+            <h4>Schedule:</h4>
+            <ul>
+                <li>10 hour shift</li>
+            </ul>
+            <h4>Education:</h4>
+            <ul>
+                <li>High school or equivalent (Preferred)</li>
+            </ul>
+            <h4>License/Certification:</h4>
+            <ul>
+                <li>Electrical License (Preferred)</li>
+                <li>Driver's License (Preferred)</li>
+            </ul>
+            <h4>Willingness to travel:</h4>
+            <ul>
+                <li>75% (Preferred)</li>
+            </ul>
+            <h4>Work Location:</h4>
+            <ul>
+                <li>On the road</li>
+            </ul>
+        </div>
+    </div>
 
-    <!-- The following section remains consistant between pages. -->
-    <div style="margin-bottom: 5vw;"></div>
+    <form class="container mb-3" action="https://formspree.io/f/moqbgzyp" method="POST" id="Employee Application Form">
+        <!-- What is an Email Address we can contact you with? -->
+        <div class="container mb-3">
+            <label for="What is an Email Address we can contact you with?" class="form-label">What is an Email Address
+                we can contact you with?</label>
+            <input type="email" class="form-control" required name="What is an Email Address we can contact you with?"
+                id="What is an Email Address we can contact you with?" placeholder="name@example.com">
+        </div>
+        <!-- What is a phone number we may use to contact you? -->
+        <div class="container mb-3">
+            <label for="What is a phone number we may use to contact you?" class="form-label">What is a phone number we
+                may use to contact you?</label>
+            <div class="col-2"><input class="form-control" type="tel" placeholder="ex. 123-456-7890" required></div>
+        </div>
+        <!-- What is the highest level of education you have completed? -->
+        <div class="container mb-3">
+            <label for="What is the highest level of education you have
+            completed?" class="form-label">What is the highest level of education you have
+                completed?</label>
+            <select class="form-select" required name="What is the highest level of education you have
+            completed?">
+                <option selected></option>
+                <option>Other</option>
+                <option>High School or Equivalent</option>
+                <option>Associate</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>Doctorate</option>
+            </select>
+        </div>
+        <!-- Do you have a valid Electrical License? -->
+        <div class="container mb-3">
+            <label for="Do you have a valid Electrical License?" class="form-label">Do you have a valid Electrical
+                License?</label>
+            <select class="form-select" required name="Do you have a valid Electrical License?">
+                <option selected></option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <!-- What percentage of the time are you willing to travel for work? -->
+        <div class="container mb-3">
+            <label for="What percentage of the time are you willing to travel for
+            work?" class="form-label">What percentage of the time are you willing to travel for
+                work?</label>
+            <select class="form-select" required name="What percentage of the time are you willing to travel for
+            work?">
+                <option selected></option>
+                <option>0%</option>
+                <option>25%</option>
+                <option>50%</option>
+                <option>75%</option>
+                <option>100%</option>
+            </select>
+        </div>
+        <!-- Are you authorized to work in the United States? -->
+        <div class="container mb-3">
+            <label for="Are you authorized to work in the United States?
+            " class="form-label">Are you authorized to work in the United States?
+            </label>
+            <select class="form-select" required name="Are you authorized to work in the United States?
+            ">
+                <option selected></option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <!-- Do you have a valid Driver's License? -->
+        <div class="container mb-3">
+            <label for="Do you have a valid Driver's License?" class="form-label">Do you have a valid Driver's
+                License?</label>
+            <select class="form-select" required name="Do you have a valid Driver's License?">
+                <option selected></option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <!-- Do you have any additional information or details you would like to submit? -->
+        <div class="container mb-3">
+            <label for="Do you have any additional information or details you would like to submit?"
+                class="form-label">Do you have any additional information or details you would like to submit?</label>
+            <textarea name="Do you have any additional information or details you would like to submit?"
+                id="Do you have any additional information or details you would like to submit?" rows="3"
+                class="form-control"></textarea>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" value="send" class="btn btn-primary ms-3">Submit</button>
+    </form>
+
+    <!-- The following section remains consistent between pages. -->
     <footer class="container-fluid" style="border: solid 2px black;">
-        <div class="row text-center">
-            <div class="col">
-                <h4>Projects</h4>
-            </div>
-            <div class="col">
-                <h4>Request a Quote</h4>
-            </div>
-            <div class="col">
-                <h4>Submit an Application</h4>
-            </div>
-            <div class="col">
-                <h4>Contact Information</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>Copyright Information</p>
-            </div>
-        </div>
+        <p style="margin: 0px;" class="mb-1">&copy; 2022 &bull; Brower Electric</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
